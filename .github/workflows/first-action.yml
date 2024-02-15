@@ -1,0 +1,13 @@
+name: First Workflow
+# manual trigger from the user
+on: workflow_dispatch
+jobs:
+  # this is the job name
+  first-job:
+    # search github action runners
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hellow World!
+      - name: Print Goodbye
+        run: echo "Done == bye!"
